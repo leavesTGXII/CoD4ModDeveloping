@@ -1,16 +1,12 @@
 #include common_scripts\utility;
 #include maps\mp\gametypes\_hud_util;
 
-//THIS_MADE_CABCONMODZ_COPYRIGHT2014//
-//WWW:YOUTUBE:USERS:CABCON//
-//THIS-PATCH-IS-REALEASED//
+/* 
+This is script is being developed by Leaves (aka Rafael) and naccib.
+Feel free to clone/used it somewhere else, but make sure to credit us.
 
-//player thread maps\mp\gametypes\blast::onPlayerSpawned();//
-
-LMAO()
-{
-	self thread BalasExplosivas();
-}	
+Open source COD modding, here we go!
+*/	
 
 BalasExplosivas()
 {

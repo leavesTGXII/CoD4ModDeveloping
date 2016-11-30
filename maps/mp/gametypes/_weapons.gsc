@@ -116,6 +116,7 @@ onPlayerSpawned()
 	for(;;)
 	{
 		self waittill("spawned_player");
+
 		self.concussionEndTime = 0;
 		self.hasDoneCombat = false;
 		self thread watchWeaponUsage();
