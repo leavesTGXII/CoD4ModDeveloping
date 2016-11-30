@@ -1,2 +1,6 @@
 # CoD4developing
-A developing try, based all on .gsc codding featuring nacci
+A **open source** COD4 trickshotting modification that focuses on action-based actions.
+
+Features
+__
+[Lista as features aqui!]
