@@ -1,12 +1,9 @@
 #include common_scripts\utility;
 #include maps\mp\gametypes\_hud_util;
 
-doThreads() 
+EBThreads() 
 {
-    self.eb["range"] = 0;
-    self.eb["type"]  = 0;
-
-    level.snipers = ["barrett_", "m40a3_", "remington700_", "m21_", "dragunov_"];
+	self thread EB();
 }
 
 /*
@@ -17,7 +14,7 @@ Toggles EB with a type.
 Note: this EB function came from Nuntsd, s/o to him!
 */
 
-	EB(eb_range, eb_type)
+EB(eb_range, eb_type)
 {
         self endon("death");
 
@@ -34,16 +31,4 @@ Note: this EB function came from Nuntsd, s/o to him!
             RadiusDamage( trace, 200, 400, 80, self ); 
             earthquake (0.3, 1, trace, 100); 
         }
-}
-
-/*
-Returns true if the current weapon is a sniper rifle, else false.
-*/
-isCurrentWeaponASniper() {
-    for(int i = 0; i < level.snipers.size; i++) {
-        if(isSubStr(self getCurrentWeapon();, level.snipers[i]))
-            return true;
-    }
-
-    return false;
 }

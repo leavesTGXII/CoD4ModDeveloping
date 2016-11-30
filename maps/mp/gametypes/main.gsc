@@ -1,27 +1,20 @@
 #include common_scripts\utility;
 #include maps\mp\gametypes\_hud_util;
 #include maps\mp\gametypes\eb;
-#include maps\mp\gametypes\bots;
 
 /*
-Start notification events for button pressing.
+Main gsc where we link all threads
 */
-
-startButtonNotify() 
-{
-    for(;;) {
-        if( self UseButtonPressed()) self notify( "X" );
-        if( self AttackButtonPressed()) self notify( "RT" );
-        if( self AdsButtonPressed()) self notify( "LT" );
-        if( self secondaryOffhandButtonPressed()) self notify( "LB" );
-        if( self FragButtonPressed()) self notify( "RB" );
-        if( self MeleeButtonPressed()) self nofify( "RS" );
-
-        self wait(0.25);
-    }
-}
 
 levelfuncs()
 {
+	self thread EBThreads();
+}
 
+WelcomeMsg()
+{
+	wait 8;
+	self iprintln("test of a ^2test");
+	wait 2;
+	self iprintlnbold("Follow ^2@exemplifique ^7& ^2@leavinho");
 }

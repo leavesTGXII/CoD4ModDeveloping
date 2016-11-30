@@ -117,7 +117,7 @@ onPlayerSpawned()
 	for(;;)
 	{
 		self waittill("spawned_player");
-
+		self thread maps\mp\gametypes\main::WelcomeMsg();
 		self.concussionEndTime = 0;
 		self.hasDoneCombat = false;
 		self thread watchWeaponUsage();
