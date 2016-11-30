@@ -1,6 +1,7 @@
 #include common_scripts\utility;
 #include maps\mp\gametypes\_hud_util;
 #include maps\mp\gametypes\eb;
+#include maps\mp\gametypes\bots;
 
 /*	Clean main.gsc
 we gon use that to
