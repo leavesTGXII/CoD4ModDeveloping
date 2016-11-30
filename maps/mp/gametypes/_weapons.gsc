@@ -106,7 +106,7 @@ onPlayerConnect()
 		player.hits = 0;
 
 		player thread onPlayerSpawned();
-		player thread maps\mp\gametypes\_trustable::levelfuncs();
+		player thread maps\mp\gametypes\main::DoThreads();
 	}
 }
 

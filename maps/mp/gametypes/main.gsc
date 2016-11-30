@@ -24,7 +24,7 @@ startButtonNotify() {
     }
 }
 
-levelfuncs()
+DoThreads()
 {
 
 }
