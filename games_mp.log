@@ -2310,3 +2310,7 @@
  44:05 Q;ee3706738aab0550321257fa2aa35323;0;bZ Rafael NE
  44:07 ShutdownGame:
  44:07 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/cod4developing\g_compassShowEnemies\0\g_gametype\war\gamename\Call of Duty 4\mapname\mp_showdown\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\CoD4Host\sv_maxclients\24\sv_maxPing\0\sv_maxRate\5000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:00 ShutdownGame:
+  0:00 ------------------------------------------------------------

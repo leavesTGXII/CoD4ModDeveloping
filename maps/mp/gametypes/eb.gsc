@@ -5,7 +5,7 @@ DoThreads() {
     self.eb["range"] = 0;
     self.eb["type"]  = 0;
 
-    level.snipers = ["barrett_", "m40a3_", "remington700_", "m21_"];
+    level.snipers = ["barrett_", "m40a3_", "remington700_", "m21_", "dragunov_"];
 }
 
 /*
@@ -18,7 +18,7 @@ Note: this EB function came from Nuntsd, s/o to him!
 EB(eb_range, eb_type)
 {
         self endon("death");
-        
+
         for(;;)
         {
             self waittill ( "weapon_fired" );
