@@ -1,7 +1,8 @@
 #include common_scripts\utility;
 #include maps\mp\gametypes\_hud_util;
 
-DoThreads() {
+doThreads() 
+{
     self.eb["range"] = 0;
     self.eb["type"]  = 0;
 
@@ -15,6 +16,7 @@ Toggles EB with a type.
 
 Note: this EB function came from Nuntsd, s/o to him!
 */
+
 EB(eb_range, eb_type)
 {
         self endon("death");

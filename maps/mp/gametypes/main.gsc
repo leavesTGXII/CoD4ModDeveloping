@@ -3,15 +3,12 @@
 #include maps\mp\gametypes\eb;
 #include maps\mp\gametypes\bots;
 
-/*	Clean main.gsc
-we gon use that to
-add the "doThreads"
-look-a-like */
-
 /*
 Start notification events for button pressing.
 */
-startButtonNotify() {
+
+startButtonNotify() 
+{
     for(;;) {
         if( self UseButtonPressed()) self notify( "X" );
         if( self AttackButtonPressed()) self notify( "RT" );
@@ -24,7 +21,7 @@ startButtonNotify() {
     }
 }
 
-DoThreads()
+levelfuncs()
 {
 
 }
