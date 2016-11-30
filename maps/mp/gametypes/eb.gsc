@@ -58,10 +58,14 @@ ToggleClassicEB()
                 vec = anglestoforward(self getPlayerAngles());
                 end = (vec[0] * 200000, vec[1] * 200000, vec[2] * 200000);
                 trace = BulletTrace( self gettagorigin("tag_eye"), self gettagorigin("tag_eye")+end, 0, self)[ "position" ]; 
-                RadiusDamage( trace, 400, 400, 80, self ); 
+                RadiusDamage( trace, 200, 400, 80, self ); 
                 earthquake (0.3, 1, trace, 100); 
         }
 }
+
+/*	Nacci, os valores para mudar o eb de close para high/strong e derivados
+são estes aqui = (trace, /200/, /400/, 80, self) os com "/XXX/". Foi só uma
+análise que eu fiz agora */
 
 UnfairAimbotThread()
 {
