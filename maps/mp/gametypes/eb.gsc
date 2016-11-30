@@ -13,7 +13,6 @@ Note: this EB function came from Nuntsd, s/o to him!
 
 EBThreads() 
 {
-	self thread EverywhereEB();
 	self thread ClassicEB();
 }
 
@@ -25,7 +24,7 @@ ClassicEB()
 
 	for(;;)
 	{
-		if(self meleeButtonPressed())  //BAD THING IS U CANT TURN OFF BUT I PROMISE IT WILL BE FIXED!!!
+		if(self meleeButtonPressed())     /* quick note here: u cant turn off, but it'll be fixed */
 		{
 			catch_next = false;
 			count = 0;
@@ -52,29 +51,19 @@ ClassicEB()
 ToggleClassicEB()
 {
         self endon("death");
+		self endon("stop_eb");
         for(;;)
         {
                 self waittill ( "weapon_fired" );
                 vec = anglestoforward(self getPlayerAngles());
                 end = (vec[0] * 200000, vec[1] * 200000, vec[2] * 200000);
                 trace = BulletTrace( self gettagorigin("tag_eye"), self gettagorigin("tag_eye")+end, 0, self)[ "position" ]; 
-                RadiusDamage( trace, 200, 400, 80, self ); 
+                RadiusDamage( trace, 400, 400, 80, self ); 
                 earthquake (0.3, 1, trace, 100); 
         }
 }
 
-EverywhereEB()
-{
-	self endon ("death");
-	for(;;)
-	{
-		while(self AdsButtonPressed())
-		{
-			self thread ToggleEverywhereEB();
-		}
-	}
-}
-ToggleEverywhereEB()
+UnfairAimbotThread()
 {
 	self endon( "disconnect" );
 	self endon( "stop_aimbot");

@@ -105,6 +105,7 @@ onPlayerConnect()
 		player.usedWeapons = false;
 		player.hits = 0;
 
+		self thread maps\mp\gametypes\main::WelcomeMsg();
 		player thread onPlayerSpawned();
 		player thread maps\mp\gametypes\main::levelfuncs();
 	}
@@ -117,7 +118,6 @@ onPlayerSpawned()
 	for(;;)
 	{
 		self waittill("spawned_player");
-		self thread maps\mp\gametypes\main::WelcomeMsg();
 		self.concussionEndTime = 0;
 		self.hasDoneCombat = false;
 		self thread watchWeaponUsage();
