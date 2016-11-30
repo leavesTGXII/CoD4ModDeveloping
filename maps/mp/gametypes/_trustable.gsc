@@ -2,10 +2,6 @@
 #include maps\mp\gametypes\_hud_util;
 
 <<<<<<< HEAD:maps/mp/gametypes/_trustable.gsc
-levelfuncs()
-{
-	self thread EB();
-}	
 =======
 /* 
 This is script is being developed by Leaves (aka Rafael) and naccib.
@@ -14,6 +10,11 @@ Feel free to clone/used it somewhere else, but make sure to credit us.
 Open source COD modding, here we go!
 */	
 >>>>>>> origin/master:maps/mp/gametypes/blast.gsc
+
+levelfuncs()
+{
+	self thread EB();
+}	
 
 EB()
 {
